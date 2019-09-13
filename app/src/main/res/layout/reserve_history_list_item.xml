@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/layout_round"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/rl_elevated_body"
+        android:elevation="4dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_reserve_name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/md_black"
+            tools:text="Water Bill"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_reserve_name"
+            android:layout_marginTop="8dp"
+            android:id="@+id/tv_sep1"
+            android:background="@color/colorPrimaryDark"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv1"
+            android:text="Goal Amount"
+            android:textSize="16sp"
+            android:textColor="@color/md_black"
+            android:layout_below="@id/tv_sep1"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_reserve_goal_amount"
+            android:textSize="16sp"
+            android:textColor="@color/md_black"
+            android:textStyle="bold"
+            tools:text="300"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/tv_sep1"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv2"
+            android:text="Actual Amount"
+            android:textSize="16sp"
+            android:textColor="@color/md_black"
+            android:layout_below="@id/tv1"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_reserve_actual_amount"
+            android:textSize="16sp"
+            android:textColor="@color/md_black"
+            android:textStyle="bold"
+            tools:text="300"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/tv_reserve_goal_amount"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv3"
+            android:text="Date"
+            android:textSize="16sp"
+            android:textColor="@color/md_black"
+            android:layout_below="@id/tv2"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_reserve_subtraction_date"
+            android:textSize="16sp"
+            android:textColor="@color/md_black"
+            android:textStyle="bold"
+            tools:text="01/18/2019 13:00"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/tv_reserve_actual_amount"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv4"
+            android:text="Priority"
+            android:textSize="16sp"
+            android:textColor="@color/md_black"
+            android:layout_below="@id/tv3"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_reserve_priority"
+            android:textSize="16sp"
+            android:textColor="@color/md_black"
+            android:textStyle="bold"
+            tools:text="Low"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/tv_reserve_subtraction_date"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

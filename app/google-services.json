@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "296822746902",
+    "firebase_url": "https://payday-12377.firebaseio.com",
+    "project_id": "payday-12377",
+    "storage_bucket": "payday-12377.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:296822746902:android:d2baf7ad26a524aa",
+        "android_client_info": {
+          "package_name": "com.example.payday"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "296822746902-bid3u7ktsm9evs76cdtg0bsl92qolgcj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.payday",
+            "certificate_hash": "e7ff657b3030fc7ef01094142e0931f0ed24b2e0"
+          }
+        },
+        {
+          "client_id": "296822746902-8mp7ud4fu37jquog0gpfnt5u4jd8km97.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrrl0BHoZ7oOdLoxwWbesnryBf9yiOCH4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "296822746902-8mp7ud4fu37jquog0gpfnt5u4jd8km97.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PayDay</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_reserves">Seems like you have no reserves. Feel free to add a new one using the add button below</string>
+    <string name="amount_subtraction">The amount will be subtracted from your balance during the due date. If you would like, you can set up a reminder for the same day and an additional one with a few days earlier.</string>
+    <string name="notification_subtraction">You will receive a notification before amount subtraction</string>
+</resources>

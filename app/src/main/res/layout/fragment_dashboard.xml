@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tag="dashboard_frag"
+        android:animateLayoutChanges="true"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_1"
+            android:text="Dashboard"
+            android:textColor="@color/md_black"
+            android:textStyle="bold"
+            android:padding="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="22sp"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/iv_swipe"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/swipe_right"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl1"
+            app:layout_constraintTop_toBottomOf="@id/tv_1"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:elevation="4dp"
+            android:background="@drawable/layout_round"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Total balance"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:id="@+id/tv_2"
+                android:textColor="@color/material_blue_grey_500"
+                tools:ignore="HardcodedText" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_2"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/md_black"
+                    tools:text="$ 2100"
+                    android:id="@+id/tv_balance"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sp_currency"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/tv_balance"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginStart="16dp"
+                    />
+
+            </RelativeLayout>
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/fab_add_to_balance"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/add"
+                tools:ignore="RelativeOverlap" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl2"
+            app:layout_constraintTop_toBottomOf="@id/rl1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="20dp"
+            android:elevation="4dp"
+            android:background="@drawable/layout_round_red"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Reserve History"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:id="@+id/tv_3"
+                android:textColor="@color/md_black"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_weekly_expenses"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/md_black"
+                tools:text="$ 0"
+                android:layout_below="@id/tv_3"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="16dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl3"
+            app:layout_constraintTop_toBottomOf="@id/rl2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="20dp"
+            android:elevation="4dp"
+            android:background="@drawable/layout_round_teal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="This Month Income"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:id="@+id/tv_4"
+                android:textColor="@color/md_black"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_month_income"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/md_black"
+                android:text="$ 0"
+                android:layout_below="@id/tv_4"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="16dp"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl4"
+            app:layout_constraintTop_toBottomOf="@id/rl3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="20dp"
+            android:elevation="4dp"
+            android:background="@drawable/layout_round_reserved"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Reserved Amount"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:id="@+id/tv_5"
+                android:textColor="@color/md_black"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_reserved_amount"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/md_black"
+                android:text="$ 0"
+                android:layout_below="@id/tv_5"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="16dp"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl5"
+            app:layout_constraintTop_toBottomOf="@id/rl4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp"
+            android:background="@drawable/layout_round"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:background="@drawable/layout_top_round"
+                android:elevation="4dp"
+                android:id="@+id/rl_in_1"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/md_black"
+                    android:layout_centerInParent="true"
+                    android:text="Upcoming Reserves"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+            </RelativeLayout>
+
+            <com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_in_1"
+                android:id="@+id/ehl_upcoming_reserves"
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chart_placeholder"
+            app:layout_constraintTop_toBottomOf="@id/rl5"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_view_more"
+            android:background="@drawable/layout_round"
+            app:layout_constraintTop_toBottomOf="@id/chart_placeholder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="16dp"
+            android:elevation="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_view_more_details"
+                android:text="View more details"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:textColor="@color/md_black"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:id="@+id/iv_arrow"
+                android:src="@drawable/money_in"
+                android:layout_alignParentEnd="true"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:id="@+id/tv_spacer"
+            app:layout_constraintTop_toBottomOf="@id/rl_view_more"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

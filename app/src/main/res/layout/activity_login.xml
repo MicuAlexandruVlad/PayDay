@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/tv1"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:textSize="22sp"
+        tools:ignore="HardcodedText" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_half_round"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        android:elevation="6dp"
+        android:layout_marginStart="16dp"
+        android:padding="16dp"
+        android:id="@+id/rl1"
+        app:layout_constraintTop_toBottomOf="@id/tv1">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Username"
+            android:hint="Username"
+            android:id="@+id/met_username"
+            app:met_iconLeft="@drawable/user"
+            android:inputType="text"
+            tools:ignore="HardcodedText" />
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/met_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="24dp"
+            android:hint="Password"
+            android:layout_below="@id/met_username"
+            android:inputType="textPassword"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Password"
+            app:met_iconLeft="@drawable/password"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/l_success"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rl1"
+        app:lottie_fileName="loading.json"
+        app:lottie_loop="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:id="@+id/btn_login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:textStyle="normal"
+        android:text="Login"
+        android:elevation="8dp"
+        android:background="@drawable/btn_round_blue"
+        tools:ignore="HardcodedText" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8FDCFF</color>
+    <color name="colorPrimaryDark">#4A63E7</color>
+    <color name="colorAccent">#FF5959</color>
+
+    <color name="background">#F9FCFF</color>
+    <color name="moneyIn">#2DD7A6</color>
+    <color name="moneyChange">@color/material_amber_800</color>
+    <color name="moneyOut">@color/colorAccent</color>
+    <color name="moneyReserved">#F18F01</color>
+
+    <color name="priorityLow">#1BC088</color>
+    <color name="priorityMedium">#FFB238</color>
+    <color name="priorityHigh">#FB5F60</color>
+</resources>
